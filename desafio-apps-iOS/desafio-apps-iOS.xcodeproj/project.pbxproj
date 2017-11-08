@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		971572F41FA7ABA400EFB023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971572F31FA7ABA400EFB023 /* AppDelegate.swift */; };
-		971572F61FA7ABA400EFB023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971572F51FA7ABA400EFB023 /* ViewController.swift */; };
+		971572F61FA7ABA400EFB023 /* CapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971572F51FA7ABA400EFB023 /* CapaViewController.swift */; };
 		971572F91FA7ABA400EFB023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971572F71FA7ABA400EFB023 /* Main.storyboard */; };
 		971572FB1FA7ABA400EFB023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971572FA1FA7ABA400EFB023 /* Assets.xcassets */; };
 		971572FE1FA7ABA400EFB023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971572FC1FA7ABA400EFB023 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,9 @@
 		971573251FA7ADE000EFB023 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971573231FA7ADE000EFB023 /* DetalhesViewController.swift */; };
 		971573261FA7ADE000EFB023 /* DetalhesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971573241FA7ADE000EFB023 /* DetalhesViewController.xib */; };
 		9715732A1FA7B47000EFB023 /* NoticiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971573291FA7B47000EFB023 /* NoticiaTableViewCell.swift */; };
-		9715732C1FA7B9D000EFB023 /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715732B1FA7B9D000EFB023 /* Noticia.swift */; };
+		9715732C1FA7B9D000EFB023 /* Conteudos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715732B1FA7B9D000EFB023 /* Conteudos.swift */; };
+		97F96CAD1FB2B3E200CCC5E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F96CAC1FB2B3E200CCC5E1 /* Extensions.swift */; };
+		97F96CAF1FB2C22F00CCC5E1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F96CAE1FB2C22F00CCC5E1 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 /* Begin PBXFileReference section */
 		971572F01FA7ABA400EFB023 /* desafio-apps-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-apps-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		971572F31FA7ABA400EFB023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		971572F51FA7ABA400EFB023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		971572F51FA7ABA400EFB023 /* CapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapaViewController.swift; sourceTree = "<group>"; };
 		971572F81FA7ABA400EFB023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		971572FA1FA7ABA400EFB023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971572FD1FA7ABA400EFB023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +56,9 @@
 		971573231FA7ADE000EFB023 /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		971573241FA7ADE000EFB023 /* DetalhesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesViewController.xib; sourceTree = "<group>"; };
 		971573291FA7B47000EFB023 /* NoticiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaTableViewCell.swift; sourceTree = "<group>"; };
-		9715732B1FA7B9D000EFB023 /* Noticia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
+		9715732B1FA7B9D000EFB023 /* Conteudos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conteudos.swift; sourceTree = "<group>"; };
+		97F96CAC1FB2B3E200CCC5E1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		97F96CAE1FB2C22F00CCC5E1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +109,12 @@
 		971572F21FA7ABA400EFB023 /* desafio-apps-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				971572F31FA7ABA400EFB023 /* AppDelegate.swift */,
-				971572F51FA7ABA400EFB023 /* ViewController.swift */,
-				971573231FA7ADE000EFB023 /* DetalhesViewController.swift */,
-				9715732B1FA7B9D000EFB023 /* Noticia.swift */,
-				971573291FA7B47000EFB023 /* NoticiaTableViewCell.swift */,
-				971573241FA7ADE000EFB023 /* DetalhesViewController.xib */,
-				971572F71FA7ABA400EFB023 /* Main.storyboard */,
-				971572FA1FA7ABA400EFB023 /* Assets.xcassets */,
-				971572FC1FA7ABA400EFB023 /* LaunchScreen.storyboard */,
 				971572FF1FA7ABA400EFB023 /* Info.plist */,
+				97F96CA91FB2AE9F00CCC5E1 /* Cells */,
+				97F96CA71FB2AE8700CCC5E1 /* Controllers */,
+				97F96CA81FB2AE9800CCC5E1 /* Models */,
+				97F96CAB1FB2AEB700CCC5E1 /* Supporting Files */,
+				97F96CAA1FB2AEAA00CCC5E1 /* Views */,
 			);
 			path = "desafio-apps-iOS";
 			sourceTree = "<group>";
@@ -135,6 +135,52 @@
 				971573151FA7ABA500EFB023 /* Info.plist */,
 			);
 			path = "desafio-apps-iOSUITests";
+			sourceTree = "<group>";
+		};
+		97F96CA71FB2AE8700CCC5E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				971572F51FA7ABA400EFB023 /* CapaViewController.swift */,
+				971573231FA7ADE000EFB023 /* DetalhesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97F96CA81FB2AE9800CCC5E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9715732B1FA7B9D000EFB023 /* Conteudos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97F96CA91FB2AE9F00CCC5E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				971573291FA7B47000EFB023 /* NoticiaTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		97F96CAA1FB2AEAA00CCC5E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				971572FC1FA7ABA400EFB023 /* LaunchScreen.storyboard */,
+				971573241FA7ADE000EFB023 /* DetalhesViewController.xib */,
+				971572F71FA7ABA400EFB023 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97F96CAB1FB2AEB700CCC5E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97F96CAC1FB2B3E200CCC5E1 /* Extensions.swift */,
+				97F96CAE1FB2C22F00CCC5E1 /* Service.swift */,
+				971572F31FA7ABA400EFB023 /* AppDelegate.swift */,
+				971572FA1FA7ABA400EFB023 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9715732A1FA7B47000EFB023 /* NoticiaTableViewCell.swift in Sources */,
-				9715732C1FA7B9D000EFB023 /* Noticia.swift in Sources */,
-				971572F61FA7ABA400EFB023 /* ViewController.swift in Sources */,
+				97F96CAF1FB2C22F00CCC5E1 /* Service.swift in Sources */,
+				97F96CAD1FB2B3E200CCC5E1 /* Extensions.swift in Sources */,
+				9715732C1FA7B9D000EFB023 /* Conteudos.swift in Sources */,
+				971572F61FA7ABA400EFB023 /* CapaViewController.swift in Sources */,
 				971572F41FA7ABA400EFB023 /* AppDelegate.swift in Sources */,
 				971573251FA7ADE000EFB023 /* DetalhesViewController.swift in Sources */,
 			);
